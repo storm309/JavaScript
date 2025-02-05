@@ -70,3 +70,7 @@ gameCounter++;
 console.log(gameCounter); // 101
 gameCounter--;
 console.log(gameCounter); // 100
+
+let gameCounter2 = 100
+gameCounter2 += 10
+console.log(gameCounter2); // 110
