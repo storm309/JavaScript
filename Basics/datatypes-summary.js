@@ -19,7 +19,7 @@ let userEmail; // Undefined
 const id = Symbol('223')
 const anotherId = Symbol('223')
 
-console.log(id === anotherId) // false
+ console.log(id === anotherId) // false
 
 // const bigNumber = 3457864538846n // BigInt
 
@@ -29,14 +29,14 @@ let myObj = {
     age: 20,
 }
 
-const myfunction = function(){
-    console.log("Hello World!")
-}
+// const myfunction = function(){
+//     console.log("Hello World!")
+// }
 
 // console.log(typeof myfunction) // bigint
 
-console.log(typeof myObj) // object
-console.log(typeof heroes) // object
+// console.log(typeof myObj) // object
+// console.log(typeof heroes) // object
 
 
 
@@ -51,3 +51,29 @@ console.log(typeof heroes) // object
 // 8. Error
 // 9. Math
 // 10. JSON
+
+
+//  ++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myLeetcodeName = "Shivam_2233";
+
+let anotherName = myLeetcodeName;
+anotherName = "Storm77";
+
+console.log(myLeetcodeName);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "shivamkumar@gmail.com",
+    upi: "shivamkumar@upi"
+}
+
+let userTwo = userOne 
+
+userTwo.email = "shivamkumar@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
